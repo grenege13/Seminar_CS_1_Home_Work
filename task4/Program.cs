@@ -15,12 +15,10 @@ double num3 = Convert.ToDouble(Console.ReadLine());
 
 double numMax = 0;
 
-if (num1 > num2)
-{
-    if (num1 > num3)
-    {
-         numMax = num1;
-         Console.WriteLine("Число " + numMax + " больше");
-    }
+if (num1 > numMax) numMax = num1;
+
+if (num2 > numMax) numMax = num2;
+
+if (num3 > numMax) numMax = num3;
     
-}
+Console.WriteLine("Число " + numMax + " больше");
